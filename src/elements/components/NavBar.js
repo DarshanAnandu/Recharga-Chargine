@@ -4,7 +4,7 @@ import { IoSearchSharp } from "react-icons/io5";
 
 const NavBar = () => {
     return (
-        <div className='h-[108px] w-full bg-black flex sticky top-0 justify-around items-center'>
+        <div className='h-[108px] w-full bg-black flex flex-wrap z-[999] sticky top-0 justify-around items-center'>
             <div className='flex items-center'>
                 <img src={Logo} alt='' className='h-[34.73px] w-auto' />
                 <div className='flex flex-col pl-3'>

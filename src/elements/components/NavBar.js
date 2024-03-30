@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/Logo.svg'
 import { IoSearchSharp } from "react-icons/io5";
 
 const NavBar = () => {

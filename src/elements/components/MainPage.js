@@ -24,15 +24,15 @@ const MainPage = () => {
             <div className='w-full' style={{ height: `calc(100vh - ${'108px'})`, backgroundImage: `url(${learn ? Bg : Bg2})`, backgroundSize: 'cover' }} onMouseLeave={() => setLearn(true)}>
                 {learn ?
                     <div className='flex flex-col items-center text-center'>
-                        <h2 className='text-[52px] text-[#F5F5F5] w-[60%] font-bold leading-[54.02px] my-12 mt-24'>Powered by your car for your car</h2>
-                        <p className='w-[30%] text-[20px] text-[#FFFFFF] font-normal leading-[26px]'>Imagine a world where charging your electric vehicle is not just a necessity but a seamless and enjoyable experience. Our product, a state-of-the-art charging machine, is designed to make this vision a reality. </p>
+                        <h2 className='text-[52px] text-[#F5F5F5] w-[60%] w-fp font-bold leading-[54.02px] my-12 mt-24'>Powered by your car for your car</h2>
+                        <p className='w-[30%] text-[20px] w-fp text-[#FFFFFF] font-normal leading-[26px]'>Imagine a world where charging your electric vehicle is not just a necessity but a seamless and enjoyable experience. Our product, a state-of-the-art charging machine, is designed to make this vision a reality. </p>
                         <button className='font-[700] text-[20px] leading-[28px] text-[#FFFFFF] py-[16.31px] px-[48.94px] border-[1.02px] border-[#00DD52] hover:bg-[#00DD52] rounded-[15px] mt-16' onClick={() => setLearn(false)}>Learn More</button>
                         <img src={Car} alt='' data-aos='fade-up' data-aos-offset='100' data-aos-delay='20' className='h-auto w-[50%] mt-12' />
                     </div>
                     :
                     <div className='p-24' data-aos='fade-right' data-aos-offset='0' data-aos-delay='20'>
                         <h2 className='font-[500] text-[20px] text-[#00DD52] leading-[24px]'>Recharga Chargine</h2>
-                        <p className='w-[60%] font-normal text-[20px] leading-[38px]'>Recharga Chargine may address other pain points in the EV ecosystem, such as range anxiety, charging infrastructure limitations, and the environmental impact of battery production and disposal. <br />
+                        <p className='w-[60%] w-fp leading font-normal text-[20px] leading-[38px]'>Recharga Chargine may address other pain points in the EV ecosystem, such as range anxiety, charging infrastructure limitations, and the environmental impact of battery production and disposal. <br />
                             Through comprehensive solutions encompassing energy management, infrastructure development, and environmental stewardship, Recharga Chargine aims to accelerate the transition to a more sustainable transportation paradigm. <br /> <br />
 
                             The pain point addressed by Recharga Chargine revolves around the sustainability of electric vehicles (EVs). <br />
@@ -47,23 +47,23 @@ const MainPage = () => {
     }
     const Sp = () => {
         return (
-            <div className='flex flex-col items-center text-center' data-aos='fade-left' data-aos-offset='0' data-aos-delay='20' style={{ height: `calc(100vh - ${'108px'})`, backgroundImage: `url(${Bg2})`, backgroundSize: 'cover' }}>
+            <div className='flex flex-col items-center text-center w-full h-100' data-aos='fade-left' data-aos-offset='0' data-aos-delay='20' style={{ height: `calc(100vh - ${'108px'})`, backgroundImage: `url(${Bg2})`, backgroundSize: 'cover' }}>
                 {/* <div className='flex flex-col items-center text-center' style={{ height: `calc(100vh - ${'108px'})`, background: `url(${Bg2})`, backgroundPosition: `${scrollPosition}px 50%`, animation: 'slideBackground 10s linear infinite', backgroundSize: 'cover' }}> */}
                 <p className='text-[#00DD52] font-normal leading-[24px] text-[20px] w-[60%] mt-[10%]'>Visionary Innovation</p>
-                <h1 className='font-bold leading-[61.2px] text-[51px] w-[60%] mt-12'>Reimagining energy for eMobility, we create sustainable charging solutions for electric vehicles.</h1>
+                <h1 className='font-bold leading-[61.2px] text-[51px] red-fonsiz w-[60%] w-fp mt-12'>Reimagining energy for eMobility, we create sustainable charging solutions for electric vehicles.</h1>
             </div>
         );
     }
     const Tp = () => {
         const [learn, setLearn] = useState(true)
         return (
-            <div className='flex justify-end' style={{ height: `calc(100vh - ${'108px'})` }} onMouseLeave={() => setLearn(true)}>
+            <div className='flex justify-end h-100' onMouseLeave={() => setLearn(true)}>
                 {learn ?
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between flx-clmn'>
                         <div className='flex items-end'>
                             <img src={Car2} alt='' data-aos='fade-up-right' data-aos-offset='0' data-aos-delay='20' className='h-[600px] w-auto' />
                         </div>
-                        <div className='w-[30%] flex flex-col items-start p-6'>
+                        <div className='w-[30%] flex flex-col items-start p-6 w-fp'>
                             <p className='text-[#00DD52] font-normal leading-[24px] text-[20px] mt-[10%]'>Our Product</p>
                             <h1 className='font-bold leading-[61.2px] text-[51px] mt-16'>Charge as you drive</h1>
                             <p className='font-normal leading-[26px] text-[20px] mt-16'>Experience seamless and enjoyable electric vehicle charging with our state-of-the-art machine. Harnessing kinetic energy, it charges efficiently on the go.</p>
@@ -71,9 +71,9 @@ const MainPage = () => {
                         </div>
                     </div>
                     :
-                    <div className='p-24' data-aos='fade-right' data-aos-offset='0' data-aos-anchor-placement="top-center" data-aos-delay='20'>
+                    <div className='p-24 red-pad' data-aos='fade-right' data-aos-offset='0' data-aos-anchor-placement="top-center" data-aos-delay='20'>
                         {/* <h2 className='font-[500] text-[20px] text-[#00DD52] leading-[24px]'>Recharga Chargine</h2> */}
-                        <p className='w-[60%] font-normal text-[20px] leading-[38px]'>Recharga Chargine introduces an innovative product for electric vehicles (EVs), <br />
+                        <p className='w-[60%] font-normal w-fp text-[20px] leading-[38px]'>Recharga Chargine introduces an innovative product for electric vehicles (EVs), <br />
                             revolutionizing on-the-go charging. This cutting-edge technology captures kinetic energy during vehicle operation, seamlessly integrating with existing EV drivetrains. With minimal vehicle modifications, it offers continuous charging while in motion, eliminating the need for frequent stops at charging stations.  <br />
                             <br />
                             Unlike traditional charging methods that require the vehicle to be stationary at charging stations, our system enables continuous charging while the vehicle is in motion. This innovative approach eliminates the need for frequent stops to recharge, enhancing the convenience and efficiency of EVs.  <br />
@@ -86,30 +86,30 @@ const MainPage = () => {
     }
     const Forthp = () => {
         return (
-            <div className='p-12' style={{ height: `calc(100vh - ${'108px'})` }}>
+            <div className='p-12 h-100'>
                 <div className='flex items-center'>
-                    <h1 className='font-bold leading-[53.04px] text-[51px]'>How it works </h1>
+                    <h1 className='font-bold leading-[53.04px] text-[51px] red-fonsiz'>How it works </h1>
                     <img src={Logo} alt='' className='h-[74.73px] pl-6 w-auto' />
                 </div>
                 <div className='flex items-center my-14'>
-                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14' />
-                    <span className='font-bold leading-[96px] text-[96px] mr-14'>1</span>
+                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14 mr' />
+                    <span className='font-bold leading-[96px] text-[96px] red-fonsiz-2 mr-14 mr'>1</span>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold leading-[25.2px] text-[18px]'>Capture Kinetic Energy</h1>
                         <p className='font-normal leading-[26px] text-[20px]'>As you drive, your vehicle's movement is transformed into electric power for charging.</p>
                     </div>
                 </div>
                 <div className='flex items-center my-14'>
-                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14' />
-                    <span className='font-bold leading-[96px] text-[96px] mr-14'>2</span>
+                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14 mr' />
+                    <span className='font-bold leading-[96px] text-[96px] red-fonsiz-2 mr-14 mr'>2</span>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold leading-[25.2px] text-[18px]'>Convert to Electricity</h1>
                         <p className='font-normal leading-[26px] text-[20px]'>Our system efficiently converts kinetic energy to electricity, minimizing energy loss.</p>
                     </div>
                 </div>
                 <div className='flex items-center my-14'>
-                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14' />
-                    <span className='font-bold leading-[96px] text-[96px] mr-14'>3</span>
+                    <img src={Round} alt='' className='h-[66.31px] w-auto mr-14 mr' />
+                    <span className='font-bold leading-[96px] text-[96px] red-fonsiz-2 mr-14 mr'>3</span>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold leading-[25.2px] text-[18px]'>Recharge and Go</h1>
                         <p className='font-normal leading-[26px] text-[20px]'>The charger supplies your EV with energy, allowing you to charge up without stopping.</p>
@@ -120,23 +120,23 @@ const MainPage = () => {
     }
     const Fifthp = () => {
         return (
-            <div className='p-12 flex flex-col justify-around font-[Satoshi] leading-10' style={{ height: `calc(100vh - ${'108px'})`, backgroundImage: `url(${Round2})`, backgroundSize: 'cover' }}>
+            <div className='p-12 flex flex-col justify-around font-[Satoshi] leading-10 h-100' style={{ backgroundImage: `url(${Round2})`, backgroundPositionX: '-1000px', backgroundPositionY: '-900px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <div className='flex justify-end'>
-                    <div className='flex flex-col w-[50%]'>
+                    <div className='flex flex-col w-[50%] w-fp'>
                         <p className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>About Us</p>
                         <h1 className='font-bold leading-[53.04px] text-[51px] mt-6'>We proudly lead a transformative movement towards eco-conscious transportation.</h1>
                     </div>
                 </div>
-                <div className='flex justify-between mx-24'>
-                    <div className='w-[20%]'>
+                <div className='flex flx-clmn justify-between mx-24 marg-x marg-y'>
+                    <div className='w-[20%] w-fp mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Our Passion</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Dedicated to revolutionizing the way the world charges its electric vehicles, Recharga Chargine is more than just a company; it's a commitment to environmental responsibility and technological advancement. </p>
                     </div>
-                    <div className='w-[20%]'>
+                    <div className='w-[20%] w-fp mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Our Vision</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>We envision a world where electric vehicles seamlessly integrate into daily life, powered by an efficient and accessible charging infrastructure. Through cutting-edge technology and a commitment. </p>
                     </div>
-                    <div className='w-[20%]'>
+                    <div className='w-[20%] w-fp mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Our Mission</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Our mission is twofold: to develop innovative charging solutions that redefine the EV experience and to inspire a global community to embrace electric mobility. </p>
                     </div>
@@ -146,28 +146,28 @@ const MainPage = () => {
     }
     const Sixthp = () => {
         return (
-            <div className='p-12 flex flex-col justify-end font-[Satoshi] leading-10' style={{ height: `calc(100vh - ${'108px'})` }}>
-                <div className='flex justify-between mx-24 my-24'>
-                    <div className='flex flex-col w-[50%]'>
+            <div className='p-12 red-pad-2 flex flex-col justify-end font-[Satoshi] leading-10 h-100'>
+                <div className='flex flx-clmn justify-between mx-24 my-24 marg-x'>
+                    <div className='flex flex-col w-[50%] w-fw mr'>
                         <p className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Recharga Team</p>
-                        <h1 className='font-bold leading-[53.04px] text-[51px] mt-6'>We are crafting the future of charging</h1>
+                        <h1 className='font-bold leading-[53.04px] text-[51px] red-fonsiz mt-6'>We are crafting the future of charging</h1>
                     </div>
                     <img src={Peoples} alt='' />
                 </div>
-                <div className='flex justify-between mx-24'>
-                    <div className='w-[20%]'>
+                <div className='flex flx-clmn justify-between mx-24 marg-x'>
+                    <div className='w-[20%] w-fw mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Research Prowess</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Leading in charging technology, we stay ahead by researching the latest in tech, user experience, and sustainability.</p>
                     </div>
-                    <div className='w-[20%]'>
+                    <div className='w-[20%] w-fw mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Dynamic Collaboration</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Our diverse team of engineers, designers, and sustainability enthusiasts collaborates seamlessly to ensure excellence in every aspect.</p>
                     </div>
-                    <div className='w-[20%]'>
+                    <div className='w-[20%] w-fw mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Iterative Design</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Through constant feedback loops and continuous improvement, we've shaped a sleek, user-friendly charging solution.</p>
                     </div>
-                    <div className='w-[20%]'>
+                    <div className='w-[20%] w-fw mr'>
                         <h1 className='font-[500] leading-[24px] text-[20px] text-[#00FE5E]'>Passionate Sustainability</h1>
                         <p className='font-[500] leading-[36px] text-[20px] text-[#D0D0D0] mt-6'>Beyond expertise, our team's deep passion for sustainability fuels our drive to set new benchmarks for environmental responsibility in every product we create.</p>
                     </div>
@@ -178,7 +178,7 @@ const MainPage = () => {
     const Seventhp = () => {
         return (
             <div className='p-12 flex flex-col text-center items-center font-[Satoshi] leading-10' style={{ height: `calc(100vh - ${'108px'})`, backgroundImage: `url(${Bg4})`, backgroundSize: 'cover' }}>
-                <h1 className='font-bold leading-[61.2px] text-[51px] w-[30%] mt-6'>Automated EV charging revolutionized</h1>
+                <h1 className='font-bold leading-[61.2px] text-[51px] w-[30%] w-fp red-fonsiz mt-6'>Automated EV charging revolutionized</h1>
             </div>
         );
     }
@@ -204,9 +204,9 @@ const MainPage = () => {
         }, []);
 
         return (
-            <div className='font-[Satoshi]' style={{ height: `calc(100vh - ${'108px'})` }}>
+            <div className='font-[Satoshi] h-100'>
                 {!join ?
-                    <div className='p-12 flex'>
+                    <div className='p-12 flex flx-clmn'>
                         <div className='flex justify-center'>
                             <div className='w-[50%]'>
                                 <span className='font-[500] leading-[24px] text-[20px] text-[#00FE5E] my-6'>Invest with us</span>
@@ -216,7 +216,7 @@ const MainPage = () => {
                             </div>
                         </div>
                         <div className='flex flex-col items-center'>
-                            <div className='flex flex-col w-[70%] my-8'>
+                            <div className='flex flex-col my-8 w-[70%] w-fp'>
                                 <div className='flex items-center'>
                                     <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0184 0.112896C17.8548 0.0384955 17.6772 0 17.4975 0C17.3178 0 17.1401 0.0384955 16.9766 0.112896L10.3757 3.11764L17.4925 6.35894L24.6143 3.11513L18.0184 0.112896ZM9.19291 13.0278V5.34226L16.2392 8.55085V17.0442L9.92522 14.1728C9.7054 14.0728 9.51899 13.9117 9.38825 13.7087C9.2575 13.5056 9.18794 13.2693 9.18788 13.0278H9.19291ZM18.7558 29.9188V21.5135L25.4296 24.5535V33.0468L19.1232 30.1755C18.9854 30.1128 18.8626 30.0259 18.7558 29.9188ZM27.9461 33.0519V24.5535L35 21.3424V29.0304C34.9999 29.2719 34.9304 29.5083 34.7996 29.7113C34.6689 29.9144 34.4825 30.0755 34.2627 30.1755L27.9461 33.0519ZM16.2342 21.5135V29.9288C16.1295 30.0314 16.0077 30.1148 15.8743 30.1755L9.55781 33.0519V24.5535L16.2342 21.5135ZM7.04127 24.5535V33.0468L0.737345 30.1755C0.517523 30.0755 0.331114 29.9144 0.200369 29.7113C0.0696243 29.5083 6.6868e-05 29.2719 0 29.0304V21.3449L7.0463 24.5535H7.04127ZM18.7507 17.0492V8.54833L25.8046 5.33723V13.0278C25.8045 13.2693 25.7349 13.5056 25.6042 13.7087C25.4735 13.9117 25.2871 14.0728 25.0672 14.1728L18.7507 17.0492ZM26.1695 16.1181C26.3331 16.0437 26.5107 16.0052 26.6904 16.0052C26.8701 16.0052 27.0477 16.0437 27.2113 16.1181L33.8046 19.1178L26.6828 22.3616L19.5736 19.1178L26.172 16.113L26.1695 16.1181ZM7.78365 16.1181C7.94724 16.0437 8.12486 16.0052 8.30457 16.0052C8.48428 16.0052 8.66191 16.0437 8.8255 16.1181L15.4188 19.1178L8.29954 22.3641L1.18529 19.1178L7.78365 16.1181Z" fill="#00FE5E" />
@@ -225,7 +225,7 @@ const MainPage = () => {
                                 </div>
                                 <p className='font-[400] leading-[34px] text-[20px] text-[#FFFFFF] my-6'>Our team is at the forefront of charging technology, driving innovation that shapes the future of eco-conscious mobility.</p>
                             </div>
-                            <div className='flex flex-col my-8 w-[70%]'>
+                            <div className='flex flex-col my-8 w-[70%] w-fp'>
                                 <div className='flex items-center'>
                                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6.59129 5.9736C7.62115 5.9736 8.45602 5.13873 8.45602 4.10887C8.45602 3.07901 7.62115 2.24414 6.59129 2.24414C5.56143 2.24414 4.72656 3.07901 4.72656 4.10887C4.72656 5.13873 5.56143 5.9736 6.59129 5.9736Z" fill="#00FE5E" />
@@ -246,7 +246,7 @@ const MainPage = () => {
                                 </div>
                                 <p className='font-[400] leading-[28px] text-[20px] text-[#FFFFFF] my-6'>Through iterative design, feedback loops, and continuous improvement, we've created a sleek, user-friendly charging solution that captivates the market.</p>
                             </div>
-                            <div className='flex flex-col my-8 w-[70%]'>
+                            <div className='flex flex-col my-8 w-[70%] w-fp'>
                                 <div className='flex items-center'>
                                     <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M27.8571 10.4464C29.088 10.4449 30.2681 9.95524 31.1384 9.08487C32.0088 8.2145 32.4985 7.03446 32.5 5.80357V2.32143H29.0179C27.8294 2.32318 26.6875 2.78298 25.8294 3.60518C25.2281 2.51414 24.3453 1.60422 23.273 0.970168C22.2006 0.336113 20.9779 0.00109785 19.7321 0H16.25V3.48214C16.2521 5.32853 16.9866 7.09867 18.2922 8.40426C19.5978 9.70985 21.3679 10.4443 23.2143 10.4464H24.375V25.5357H10.4464V19.7321H11.6071C12.838 19.7306 14.0181 19.241 14.8884 18.3706C15.7588 17.5002 16.2485 16.3202 16.25 15.0893V11.6071H12.7679C11.5794 11.6089 10.4375 12.0687 9.57938 12.8909C8.97807 11.7999 8.09529 10.8899 7.02295 10.2559C5.95061 9.62183 4.72791 9.28681 3.48214 9.28571H0V12.7679C0.00215035 14.6142 0.736576 16.3844 2.04217 17.69C3.34776 18.9956 5.1179 19.73 6.96429 19.7321H8.125V25.5357H0V27.8571H32.5V25.5357H26.6964V10.4464H27.8571ZM26.6964 6.96429C26.697 6.34879 26.9418 5.75869 27.377 5.32347C27.8123 4.88825 28.4024 4.64347 29.0179 4.64286H30.1786V5.80357C30.178 6.41906 29.9332 7.00917 29.498 7.44439C29.0627 7.87961 28.4726 8.12438 27.8571 8.125H26.6964V6.96429ZM10.4464 16.25C10.447 15.6345 10.6918 15.0444 11.127 14.6092C11.5623 14.174 12.1524 13.9292 12.7679 13.9286H13.9286V15.0893C13.928 15.7048 13.6832 16.2949 13.248 16.7301C12.8127 17.1653 12.2226 17.4101 11.6071 17.4107H10.4464V16.25ZM8.125 17.4107H6.96429C5.73339 17.4092 4.55336 16.9195 3.68299 16.0492C2.81261 15.1788 2.32296 13.9987 2.32143 12.7679V11.6071H3.48214C4.71303 11.6087 5.89307 12.0983 6.76344 12.9687C7.63381 13.8391 8.12346 15.0191 8.125 16.25V17.4107ZM24.375 8.125H23.2143C21.9834 8.12346 20.8034 7.63381 19.933 6.76344C19.0626 5.89307 18.573 4.71303 18.5714 3.48214V2.32143H19.7321C20.963 2.32296 22.1431 2.81261 23.0134 3.68299C23.8838 4.55336 24.3735 5.73339 24.375 6.96429V8.125Z" fill="#00FE5E" />
@@ -260,9 +260,9 @@ const MainPage = () => {
                     :
                     <div className='flex justify-center items-center w-full h-full'>
                         {!submit ?
-                            <form ref={formRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] bg-[#13131396]' onSubmit={() => setSubmit(true)}>
+                            <form ref={formRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] w-fp bg-[#13131396]' onSubmit={() => setSubmit(true)}>
                                 <span className='flex justify-end text-[#00DD52] cursor-pointer' onClick={() => setJoin(false)}>X</span>
-                                <div className='mx-24 flex flex-col'>
+                                <div className='mx-24 marg-x flex flex-col'>
                                     <label>Name</label>
                                     <input type='text' className=' bg-transparent outline-none border-[0.5px] px-5 py-3 border-[#00FE5E] rounded-2xl' required />
                                     <label>Email</label>
@@ -273,7 +273,7 @@ const MainPage = () => {
                                 </div>
                             </form>
                             :
-                            <div ref={abcRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] bg-[#13131396]'>
+                            <div ref={abcRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] w-fp bg-[#13131396]'>
                                 <span className='flex justify-end text-[#00DD52] cursor-pointer' onClick={() => { setJoin(false); setSubmit(false) }}>X</span>
                                 <div className='mx-24 flex flex-col text-center'>
                                     <p className='font-[400] leading-[28px] text-[20px] text-[#00FE5E] my-6'>Request Submitted</p>
@@ -306,14 +306,14 @@ const MainPage = () => {
         }, []);
 
         return (
-            <div className='font-[Satoshi]' style={{ height: `calc(100vh - ${'108px'})` }}>
-                <div className='flex'>
-                    <div className='w-[50%] flex flex-col my-12 mx-12'>
+            <div className='font-[Satoshi] h-100'>
+                <div className='flex flx-clmn'>
+                    <div className='w-[50%] w-fp flex flex-col my-12 mx-12'>
                         <p className='font-[500] leading-[24px] text-[20px] text-[#00FE5E] my-6'>Get in touch</p>
-                        <h1 className='font-bold leading-[61.2px] text-[51px] text-[#FFFFFF] my-6 w-[70%]'>We’d love to hear from you!</h1>
-                        <p className='font-[500] leading-[24px] text-[20px] text-[#FFFFFF] my-6 w-[80%]'>Whether you have questions about our products, want to explore partnership opportunities, or simply want to chat about sustainable  mobility, we're here for you.</p>
+                        <h1 className='font-bold leading-[61.2px] text-[51px] text-[#FFFFFF] my-6 w-[70%] w-fp'>We’d love to hear from you!</h1>
+                        <p className='font-[500] leading-[24px] text-[20px] text-[#FFFFFF] my-6 w-[80%] w-fp'>Whether you have questions about our products, want to explore partnership opportunities, or simply want to chat about sustainable  mobility, we're here for you.</p>
                     </div>
-                    <form className='flex flex-col p-9 w-[50%]' onSubmit={(e) => { e.preventDefault(); defRef.current.style.display = 'flex'; }}>
+                    <form className='flex flex-col p-9 w-[50%] w-fp' onSubmit={(e) => { e.preventDefault(); defRef.current.style.display = 'flex'; }}>
                         <div className='mx-6 flex flex-col'>
                             <div className='my-6 flex flex-col'>
                                 <label>Name</label>
@@ -340,7 +340,7 @@ const MainPage = () => {
                         </div>
                     </form>
                     <div ref={defRef} className='fixed top-0 left-0 hidden justify-center items-center w-full h-full bg-gray-900 bg-opacity-10'>
-                        <div ref={abcRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] bg-[#13131396]' style={{ backdropFilter: 'blur(20px)' }}>
+                        <div ref={abcRef} className='flex flex-col border-[0.3px] border-[#00DD52] rounded-2xl p-9 w-[60%] w-fp bg-[#13131396]' style={{ backdropFilter: 'blur(20px)' }}>
                             <span className='flex justify-end text-[#00DD52] cursor-pointer' onClick={() => defRef.current.style.display = 'none'}>X</span>
                             <div className='mx-24 flex flex-col text-center'>
                                 <p className='font-[400] leading-[28px] text-[20px] text-[#00FE5E] my-6'>Request Submitted</p>
@@ -355,8 +355,8 @@ const MainPage = () => {
     }
     const Tenthp = () => {
         return (
-            <div className='font-[Satoshi] text-center flex flex-col items-center justify-center' style={{ height: `calc(100vh - ${'108px'})` }}>
-                <div className='w-[50%]'>
+            <div className='font-[Satoshi] text-center flex flex-col items-center justify-center h-100'>
+                <div className='w-[50%] w-fp'>
                     <p className='font-[400] leading-[28px] text-[20px] text-[#00FE5E] my-6'>Join our team</p>
                     <h1 className='font-[700] leading-[61.2px] text-[51px] text-[#FFFFFF] my-6'>Explore Job Opportuinites</h1>
                     <p className='font-[500] leading-[28px] text-[20px] text-[#FFFFFF] my-6'>We are currently on the lookout for a dynamic professional to join our team This is your chance to be part of our company, contribute your unique skills, and grow with a company that values innovation and excellence.</p>
@@ -370,19 +370,19 @@ const MainPage = () => {
     }
     const Eleventhp = () => {
         return (
-            <div className='font-[Satoshi]' style={{ height: `calc(100vh - ${'108px'})` }}>
+            <div className='font-[Satoshi] h-100'>
                 <p className='font-[500] leading-[28px] text-[20px] text-[#00FE5E] text-center my-6'>Newsletter</p>
                 <h1 className='font-[700] leading-[53.04px] text-[51px] text-[#FFFFFF] text-center my-6'>Join charged chatter </h1>
-                <div className='flex justify-around mt-24'>
-                    <div className='flex flex-col w-[20%]'>
+                <div className='flex flx-clmn justify-around mt-24'>
+                    <div className='flex flex-col w-[20%] w-fp marg-x'>
                         <h3 className='font-[500] leading-[28px] text-[20px] text-[#00FE5E] my-6'>EcoMotion Showcase</h3>
                         <p className='font-[400] leading-[28px] text-[20px] text-[#D0D0D0] my-6'>Embark on a journey through the most exciting and innovative uses of electric vehicles across different industries. From electric delivery drones to autonomous EV shuttle services, we uncover unique applications that showcase the cutting-edge side of sustainability.</p>
                     </div>
-                    <div className='flex flex-col w-[20%]'>
+                    <div className='flex flex-col w-[20%] w-fp marg-x'>
                         <h3 className='font-[500] leading-[28px] text-[20px] text-[#00FE5E] my-6'>EV’s Charged Adventures</h3>
                         <p className='font-[400] leading-[28px] text-[20px] text-[#D0D0D0] my-6'>Dive into the world of EVs with in-depth reviews, real-world usage insights, expert tidbits, and interactive features. Whether you're a seasoned EV enthusiast or just starting your journey, we've got something for everyone.</p>
                     </div>
-                    <div className='flex flex-col w-[20%]'>
+                    <div className='flex flex-col w-[20%] w-fp marg-x'>
                         <h3 className='font-[500] leading-[28px] text-[20px] text-[#00FE5E] my-6'>New Industry Updates</h3>
                         <p className='font-[400] leading-[28px] text-[20px] text-[#D0D0D0] my-6'>Stay in the loop with the latest happenings in the electric mobility landscape. Our updates cover industry trends, breakthrough technologies, and noteworthy developments that shape the future of sustainable transportation.</p>
                     </div>
@@ -406,7 +406,7 @@ const MainPage = () => {
                             <span>Recharga Chargine</span>
                         </div>
                     </div>
-                    <div className='flex justify-evenly w-[70%] mx-24'>
+                    <div className='flex justify-evenly w-[70%] mx-24 marg-x w-fp'>
                         <button className='mx-4 text-[#00FE5E]'>About Us</button>
                         <button className='mx-4 text-[#00FE5E]'>Product</button>
                         <button className='mx-4 text-[#00FE5E]'>Invest </button>
@@ -414,7 +414,7 @@ const MainPage = () => {
                         <button className='mx-4 text-[#00FE5E]'>Contact Us</button>
                     </div>
                 </div>
-                <div className='flex justify-around'>
+                <div className='flex flx-clmn justify-around text-c'>
                     <div className='p-12'>
                         <h1 className='font-[800] leading-[20px] text-[26px] text-[#D0D0D0] my-6'>RECHARGA CHARGINE PRIVATE LIMITED</h1>
                         <p className='font-[400] leading-[20px] text-[20px] text-[#D0D0D0] my-6'>REGISTERED OFFICE: 130 E, SHRI GOPAL NAGAR, DURGAPURA, JAIPUR RJ 302018 IN</p>
@@ -427,7 +427,7 @@ const MainPage = () => {
                     <div className='flex flex-col p-12'>
                         <p className='font-[400] leading-[20px] text-[16px] text-[#D0D0D0] my-6'>+919322107991</p>
                         <p className='font-[400] leading-[20px] text-[16px] text-[#D0D0D0] my-6'>sehej.sharma@rechargachargine.in</p>
-                        <div className='flex'>
+                        <div className='flex justi-c'>
                             <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_228_2608)">
                                     <circle cx="25.9375" cy="21.375" r="21.375" fill="black" fill-opacity="0.3" shape-rendering="crispEdges" />

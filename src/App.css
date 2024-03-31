@@ -6,3 +6,69 @@
       background-position: 0% 50%;
   }
 }
+
+.h-100 {
+  height: calc(100vh - 108px);
+}
+
+@media (max-width: 1350px) {
+  .w-fp {
+    width: 90%;
+  }
+  .w-sp {
+    width: 70%;
+  }
+  .w-fw {
+    width: 100%;
+  }
+  .red-pad {
+    padding: 50px;
+  }
+  .red-pad-2 {
+    padding: 6px;
+  }
+  .leading {
+    line-height: 23px;
+  }
+  .red-fonsiz {
+    font-size: 36px;
+  }
+  .red-fonsiz-2 {
+    font-size: 60px;
+  }
+  .text-c {
+    text-align: center;
+  }
+  .justi-c {
+    justify-content: center;
+  }
+  .marg-x {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .marg-y {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mr {
+    margin: 1rem;
+  }
+  .flx-clmn {
+    flex-direction: column;
+  }
+  .h-100 {
+    height: 100%;
+  }
+}
+@media (max-width: 1070px) {
+  .burgar-nav-on {
+    display: flex;
+  }
+  .ordinary-nav-off {
+    display: none;
+  }
+  .justify-nav {
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+}

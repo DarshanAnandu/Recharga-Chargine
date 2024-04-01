@@ -1,8 +1,9 @@
 import React from 'react'
+import Img from '../../assets/round2.svg'
 
 const EleventhPage = () => {
     return (
-        <div className='font-[Satoshi] h-100'>
+        <div className='font-[Satoshi] h-100' style={{ backgroundImage: `url(${Img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPositionX: '570px', backgroundPositionY: '' }}>
             <p className='font-[500] leading-[28px] text-[20px] text-[#00FE5E] text-center my-6'>Newsletter</p>
             <h1 className='font-[700] leading-[53.04px] text-[51px] text-[#FFFFFF] text-center my-6 '>Join charged chatter </h1>
             <div className='flex flx-clmn justify-around mt-24'>

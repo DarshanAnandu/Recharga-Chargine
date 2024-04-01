@@ -14,7 +14,7 @@ This repository contains the frontend code for Recharga Chargine, a website dedi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/DarshanAnandu/Recharga-Chargine
+git clone https://github.com/DarshanAnandu/Recharga-Chargine.git
 ```
 
 2. Install dependencies:

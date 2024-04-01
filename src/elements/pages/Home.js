@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
-import MainPage from '../components/MainPage'
+import MainPage from './HomeScreens/MainPage'
 import SideNav from '../components/SideNav'
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
             <div className='flex'>
                 <MainPage />
                 {burger && isWindow && (
-                    < SideNav />
+                    <SideNav />
                 )}
             </div>
         </div>

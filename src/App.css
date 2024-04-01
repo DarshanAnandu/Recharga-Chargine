@@ -1,12 +1,84 @@
-@keyframes slideBackground {
-  0% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
+/* Optionally, you can add transition effects for more cheesy scrolling */
+body {
+  scroll-snap-type: y proximity;
+  scroll-padding: 100px; /* Adjust as needed */
+}
+
+/* Add scroll snap points for more controlled scrolling */
+div {
+  scroll-snap-align: start;
+}
+
+/* 
+.animate {
+  background-image: url("./elements/assets/bg_4.svg");
+  background-size: cover;
+  position: relative;
+  animation: slideBackground 7s linear;
+} */
+.animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate::before {
+  content: "";
+  background-image: url("./elements/assets/bg_4.svg");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: slideBackground 0.3s ease-in;
+}
+
+@keyframes slideBackground {
+  0% {
+    left: 100%;
+    top: 0%;
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+.animate2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate2::before {
+  content: "";
+  background-image: url("./elements/assets/round2.svg");
+  background-size: cover;
+  background-position-x: -700px;
+  background-position-y: -700px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: slideBackground2 0.3s ease-in;
+}
+
+@keyframes slideBackground2 {
+  0% {
+    left: 0%;
+    top: -100%;
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
 .h-100 {
   height: calc(100vh - 108px);
 }
@@ -24,6 +96,9 @@
   .red-pad {
     padding: 50px;
   }
+  .flx-clmn {
+    flex-direction: column;
+  }
   .red-pad-2 {
     padding: 6px;
   }
@@ -31,7 +106,7 @@
     line-height: 23px;
   }
   .red-fonsiz {
-    font-size: 36px;
+    font-size: 30px;
   }
   .red-fonsiz-2 {
     font-size: 60px;
@@ -46,15 +121,16 @@
     margin-right: 20px;
     margin-left: 20px;
   }
+  .marg-x-2 {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
   .marg-y {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .mr {
     margin: 1rem;
-  }
-  .flx-clmn {
-    flex-direction: column;
   }
   .h-100 {
     height: 100%;
@@ -70,5 +146,11 @@
   .justify-nav {
     justify-content: space-between;
     padding: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .flx-clmn-2 {
+    flex-direction: column;
   }
 }
